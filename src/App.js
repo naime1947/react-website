@@ -1,6 +1,5 @@
 import React from 'react';
 import Website from './components/Website'
-
 import './App.css';
 
 function App() {

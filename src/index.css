@@ -1,18 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 
 /*------------------------------------------------------------------
         File Name: style.css
@@ -34,9 +19,10 @@ code {
         2. import files
     -------------------------------------------------------------------*/
 
-/* @import url(animate.css);
-@import url(font-awesome.min.css);
-@import url(flaticon.css); */
+    /* @import url(./css/bootstrap.min.css);
+    @import url(./css/animate.css);
+@import url(./css/font-awesome.min.css); */
+
 
 /*------------------------------------------------------------------
         3. basic
@@ -242,11 +228,13 @@ button {
 
 .white_bt.bt_main {
     background: #fff;
+    color: #1e72bc;
 }
 
 .white_bt.bt_main:hover,
 .white_bt.bt_main:focus {
     color: #fff;
+    background: #1e72bc;
 }
 
 .field button {

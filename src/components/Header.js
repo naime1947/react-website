@@ -4,6 +4,7 @@ import logo from '../assets/logo.png';
 class Header extends React.Component {
     state={
         menus:[]
+
     }
     componentDidMount() {
         const menus = ["Home","About","Service","Screenshots","Pricing","Team","Contact"]
