@@ -15,7 +15,7 @@ class Header extends React.Component {
     }
 
    renderMenus  = ()=> (this.state.menus.map((menu, index) => (
-        <li key={index} ><a href={menu+'.html'} className={menu==='Home'? 'active':''} >{menu}</a></li>
+        <li key={index} ><a href={menu==='Home'? './index.html':'#'} className={menu==='Home'? 'active':''} >{menu}</a></li>
     ) ))
 
     render() {
