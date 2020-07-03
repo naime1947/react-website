@@ -2,38 +2,45 @@ import React from 'react';
 
 
 class Header extends React.Component {
-    state={
-        menus:[]
+    state = {
+        title: '',
+        paragraph: '',
+        callToActionText:''
 
     }
     componentDidMount() {
-        const menus = ["Home","About","Service","Screenshots","Pricing","Team","Contact"]
+        const title = 'Familiarize Your Creative Application';
+        const paragraph = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium..!';
+        const callToActionText = 'Download';
 
         this.setState({
-            menus
+            title,
+            paragraph,
+            callToActionText
         })
     }
 
-   
+
 
     render() {
+        const {title, paragraph,callToActionText} = this.state;
         return (
             <section id="banner_parallax" className="slide_banner1" >
-         <div className="container">
-            <div className="row">
-               <div className="col-md-6">
-                  <div className="full">
-                     <div className="slide_cont">
-                        <h2>Familiarize Your Creative Application</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium..!</p>
-                        <div className="full slide_bt"> <a className="white_bt bt_main" href="index.html">Download</a> </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-           
-         </div>
-      </section>)
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="full">
+                                <div className="slide_cont">
+                                    <h2>{title}</h2>
+                                    <p>{paragraph}</p>
+                                    <div className="full slide_bt"> <a className="white_bt bt_main" href="index.html">{callToActionText}</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>)
     }
 }
 
