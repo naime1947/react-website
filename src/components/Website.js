@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import BannerParalax from './BannerParalax';
 import LayoutPadding from './LayoutPadding';
+import LayoutPaddingGradiant from './LayoutPaddingGradiant';
 
 class Website extends React.Component {
     render() {
@@ -10,6 +11,7 @@ class Website extends React.Component {
                 <Header/>
                 <BannerParalax/>
                 <LayoutPadding/>
+                <LayoutPaddingGradiant/>
             </React.Fragment>)
     }
 }
