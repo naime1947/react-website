@@ -1,6 +1,10 @@
 import React from 'react';
 import ser6 from '../images/ser6.png';
 import logo from '../assets/logo1.png';
+import scr1 from '../images/scr1.png';
+import scr2 from '../images/scr2.png';
+import scr3 from '../images/scr3.png';
+import scr4 from '../images/scr4.png';
 
 class Footer extends React.Component {
     state = {
@@ -70,21 +74,21 @@ class Footer extends React.Component {
                                         <h3>Blog</h3>
                                     </div>
                                     <div className="blog_post_footer">
-                                        <div className="blog_post_img"> <img width="80" height="80" src="images/scr1.png" alt="#" /> </div>
+                                        <div className="blog_post_img"> <img width="80" height="80" src={scr2} alt="#" /> </div>
                                         <div className="blog_post_cont">
                                             <p className="date">July 22, 2015</p>
                                             <p className="post_head">Round and round like a carousel</p>
                                         </div>
                                     </div>
                                     <div className="blog_post_footer">
-                                        <div className="blog_post_img"> <img width="80" height="80" src="images/scr2.png" alt="#" /> </div>
+                                        <div className="blog_post_img"> <img width="80" height="80" src={scr3} alt="#" /> </div>
                                         <div className="blog_post_cont">
                                             <p className="date">July 22, 2015</p>
                                             <p className="post_head">Round and round like a carousel</p>
                                         </div>
                                     </div>
                                     <div className="blog_post_footer">
-                                        <div className="blog_post_img"> <img width="80" height="80" src="images/scr3.png" alt="#" /> </div>
+                                        <div className="blog_post_img"> <img width="80" height="80" src={scr4} alt="#" /> </div>
                                         <div className="blog_post_cont">
                                             <p className="date">July 22, 2015</p>
                                             <p className="post_head">Round and round like a carousel</p>
