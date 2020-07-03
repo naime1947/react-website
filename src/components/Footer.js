@@ -61,10 +61,10 @@ class Footer extends React.Component {
                                 </div>
                                 <div className="full">
                                     <ul className="footer-links">
-                                        <li><a href="#"><i className="fa fa-facebook"></i> 256 Likes</a></li>
-                                        <li><a href="#"><i className="fa fa-github"></i> 57+ Projects</a></li>
-                                        <li><a href="#"><i className="fa fa-twitter"></i> 1,258 Followers</a></li>
-                                        <li><a href="#"><i className="fa fa-pinterest"></i> 2538+ Pins</a></li>
+                                        <li><a href="./"><i className="fa fa-facebook"></i> 256 Likes</a></li>
+                                        <li><a href="./"><i className="fa fa-github"></i> 57+ Projects</a></li>
+                                        <li><a href="./"><i className="fa fa-twitter"></i> 1,258 Followers</a></li>
+                                        <li><a href="./"><i className="fa fa-pinterest"></i> 2538+ Pins</a></li>
                                     </ul>
                                 </div>
                             </div>
