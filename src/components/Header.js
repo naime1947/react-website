@@ -2,6 +2,21 @@ import React from 'react';
 import logo from '../assets/logo.png';
 
 class Header extends React.Component {
+    state={
+        menus:[]
+    }
+    componentDidMount() {
+        const menus = ["Home","About","Service","Screenshots","Pricing","Team","Contact"]
+
+        this.setState({
+            menus
+        })
+    }
+
+   renderMenus  = ()=> (this.state.menus.map((menu, index) => (
+        <li key={index} ><a href={menu+'.html'} className={menu==='Home'? 'active':''} >{menu}</a></li>
+    ) ))
+
     render() {
         return (
             <header className="header header_style1">
@@ -12,13 +27,9 @@ class Header extends React.Component {
                             <div className="main_menu float-right">
                                 <div className="menu">
                                     <ul className="clearfix">
-                                        <li className="active"><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="screenshots.html">Screenshots</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        
+                                        {this.renderMenus()}
+                                        
                                     </ul>
                                 </div>
                             </div>
