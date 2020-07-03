@@ -1,26 +1,15 @@
 import React from 'react';
-import ser6 from '../images/ser6.png';
+
 import logo from '../assets/logo1.png';
-import scr1 from '../images/scr1.png';
+
 import scr2 from '../images/scr2.png';
 import scr3 from '../images/scr3.png';
 import scr4 from '../images/scr4.png';
 
 class Footer extends React.Component {
-    state = {
-        text: ''
-
-    }
-    componentDidMount() {
-        const text = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,dicta sunt explicabo. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis..!'
-
-        this.setState({
-            text
-        })
-    }
 
     render() {
-        const { text } = this.state;
+        
         return (
             <footer className="footer_style_2">
                 <div className="footer_top">
